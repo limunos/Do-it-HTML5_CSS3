@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>link 스타일</title>
+    <style>
+        .container {
+            /* border:1px solid black; */
+            width:960px;
+            margin:0 auto;
+        }
+        ul li {
+            /* border:1px solid black; */
+            margin:15px;
+        }
+        li.hot::after {
+            content:"NEW: !";
+            font-size:x-small;
+            background:red;
+            color:white;
+            padding:2px 4px;
+            margin:0 10px;
+        }
+    </style>
+    <!--[if lt IE 9]>
+    <script src="html5shiv.js"></scirpt>
+    <![endif]-->
+</head>
+<body>
+    <div class="container">
+        <h1>제품 목록</h1>
+        <ul>
+          <li class="hot">제품 A</li>
+          <li>제품 B</li>
+          <li>제품 C</li>
+          <li class="hot">제품 D</li>
+        </ul>
+      </div>
+</body>
+</html>
