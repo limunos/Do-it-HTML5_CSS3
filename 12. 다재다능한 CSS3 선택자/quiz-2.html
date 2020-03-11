@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 선택자</title>
+    <style>
+        .main-menu {
+            border:1px solid black;
+            margin:50px auto;
+            height:60px;
+        }
+        .main-menu ul {
+            /* border:1px solid black; */
+            margin:0;
+            list-style:none;
+        }
+        .main-menu ul li {
+            display:inline-block;
+            padding:10px 30px;
+            line-height:40px;
+        }
+        .main-menu a {
+            text-decoration:none;
+            color:black;
+        }
+        .main-menua :link, .a:visited {
+            color:black;
+        }
+        .main-menu a:active {
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <nav class="main-menu">
+        <ul>
+            <li><a href="#">메뉴1</a></li>
+            <li><a href="#">메뉴2</a></li>
+            <li><a href="#">메뉴3</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
