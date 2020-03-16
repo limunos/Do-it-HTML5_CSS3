@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 애니메이션</title>
+    <style>
+        body {
+            padding-top: 50px;
+            padding-left:50px;
+        }
+        .box {
+            width:100px;
+            height:100px;
+            background:green;
+            border:1px solid black;
+            border-radius:5px;
+            -webkit-transition:1s background-color;
+            -moz-transition:1s background-color;
+            -o-transition:1s background-color;
+            transition:1s background-color;
+        }
+        .box:hover {
+            background:yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
